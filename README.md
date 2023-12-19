@@ -1,0 +1,2 @@
+# demoscopica
+Giuria demoscopica privata
