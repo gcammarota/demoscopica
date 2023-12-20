@@ -20,7 +20,7 @@ def authorize():
 
 def run():
     st.write("# Giuria Demoscopica Privata 👋")
-    authorize
+    authorize()
 
 
 if __name__ == "__main__":
