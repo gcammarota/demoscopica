@@ -1,3 +1,4 @@
+python-dotenv
 google-auth-httplib2
 google-auth-oauthlib
 google-auth<2dev
