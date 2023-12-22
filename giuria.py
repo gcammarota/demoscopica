@@ -11,7 +11,7 @@ import streamlit as st
 
 
 CREDENTIAL_KEY = "credentials"
-REDIRECT_URIS = ["https://demoscopica.onrender.com/", "http://localhost:8501/", "http://localhost:8500/"]
+REDIRECT_URIS = ["https://demoscopica.onrender.com", "http://localhost:8501/"]
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets", "openid", "https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"]
 
 
