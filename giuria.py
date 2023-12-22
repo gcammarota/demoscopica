@@ -11,8 +11,8 @@ CREDENTIAL_KEY = "credentials"
 
 
 def get_client_config():
-    client_config = dotenv_values("client_secret.env")
-    client_config.update({
+    client_config = {"web": dotenv_values("client_secret.env")}
+    client_config["web"].update({
         "redirect_uris": ["https://demoscopica.streamlit.app/", "http://localhost:8501/", "http://localhost:8500/"],
         "javascript_origins": ["http://demoscopica.streamlit.app:8501", "https://demoscopica.streamlit.app:8501", "http://localhost:8501"]
     })
