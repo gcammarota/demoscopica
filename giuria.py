@@ -11,7 +11,7 @@ import streamlit as st
 
 
 CREDENTIAL_KEY = "credentials"
-REDIRECT_URIS = ["https://demoscopica.streamlit.app/", "https://demoscopica.streamlit.app:8501/", "http://localhost:8501/", "http://localhost:8500/"]
+REDIRECT_URIS = ["https://demoscopica.onrender.com/", "http://localhost:8501/", "http://localhost:8500/"]
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets", "openid", "https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"]
 
 
@@ -31,7 +31,7 @@ def get_credentials(client_config):
             credentials.refresh(Request())
         else:
             flow = Flow.from_client_config(read_client_config_env_file(client_config), SCOPES)
-            flow.redirect_uri = REDIRECT_URIS[1]
+            flow.redirect_uri = REDIRECT_URIS[0]
             url, _ = flow.authorization_url()
             st.link_button("Accedi a Goole", url, type="primary")
             user_info = None
