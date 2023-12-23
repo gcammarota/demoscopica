@@ -4,11 +4,6 @@ services:
     env: docker
     plan: free
     envVars:
-      - key: UPSTREAM
-        fromService:
-          name: private-service
-          type: pserv
-          property: hostport
       - key: OAUTH2_PROXY_PROVIDER
         sync: false
       - key: OAUTH2_PROXY_CLIENT_ID
